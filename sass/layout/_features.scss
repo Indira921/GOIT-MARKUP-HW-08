@@ -1,0 +1,105 @@
+.features-container {
+    padding: 94px 0;
+}
+@media screen and (max-width: 1199px) {
+    .features-container  {
+    padding-top: 60px;
+    }
+}
+.features {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+@media screen and (min-width: 480px) {
+    .features  {
+      width: 480px;
+    }
+  }
+    @media screen and (min-width: 768px) {
+        .features  {
+      width: 768px;
+    }
+  }
+    @media screen and (min-width: 1200px) {
+        .features  {
+      width: 1200px;
+    }
+  }
+
+@media screen and (min-width: 768px) {
+.features-container .features__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+}
+
+@media screen and (min-width: 1200px) {
+  .features-container .features__list {
+     flex-wrap: nowrap;
+  }
+  }
+.features__box {
+    padding: 0;
+    &:not(:last-child) {
+    margin-right: 30px;
+}
+}
+@media screen and (min-width: 768px) and (max-width:1199px) {
+  .features__box {
+    width: calc((100% - 2 * 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .features__box:nth-child(2n) {
+    margin-right: 0;
+  }
+  .features__box:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__box {
+    width: calc((100% - 3 * 30px) / 4);
+    margin-right: 30px;
+  }
+  .features__box:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.features__icon {
+  padding: 25px 100px 25px 100px;
+    width: 100%;
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+.features__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    margin-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .features-container .features__title {
+text-align: center;
+
+  }
+}
+.features__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-accent-color);
+    margin-top: 0;
+    margin-bottom: 0;
+}

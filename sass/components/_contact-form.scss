@@ -1,0 +1,155 @@
+.modal-head {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.modal-input-form {
+    margin-top: 12px;
+}
+.modal-input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 448px;
+    margin-bottom: 10px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--secondary-accent-color);
+}
+
+.input-your-data {
+    margin-left: auto;
+    margin-right: auto;
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    margin-top: 4px;
+    transition: border-color 250ms var(--timing-function);
+}
+.input-comment {
+    display: flex;
+    flex-direction: column;
+    width: 448px;
+    height: 138px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--secondary-accent-color);
+    transition: border-color 250ms var(--timing-function);
+}
+.text-comment {
+    width: 448px;
+    height: 100%;
+    padding-top: 12px;
+    padding: 12px 16px;
+    margin-top: 4px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+.modal-your-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    fill: var(--main-text-color);
+    transition: fill 250ms var(--timing-function);
+}
+.policy-checkbox {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--secondary-accent-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+    .policy-checkbox {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+}
+
+.modal-icon-check {
+    position: relative;
+    margin-right: 5px;
+    border: 2px solid var(--main-text-color);
+    border-radius: 4px;
+    width: 16px;
+    height: 16px;
+    transition: background-color 250ms var(--timing-function),
+    border-color 250ms var(--timing-function);
+    
+.checkbox:checked + & {
+    background-size: contain;
+    background-color: var(--accent-color);
+    background-image: url(../images/check.svg);
+    border-color: transparent;
+    outline: none;
+    background-origin: border-box;
+}
+.checkbox:focus + & {
+    outline: 2px solid var(--main-text-color);
+}
+}
+
+.policy-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--accent-color);
+    text-decoration-line: underline;
+}
+.send-button {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    border-color: transparent;
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+    border-radius: 4px;
+
+    cursor: pointer;
+    transition: background-color 250ms var(--timing-function);
+
+&:hover,
+&:focus {
+    background-color: var(--background-color);
+}
+}
+.text-comment:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+.input-your-data:focus {
+    border: 1px solid var(--accent-color);
+    outline: none;
+}
+.input-your-data:focus+.modal-your-icon {
+    fill: var(--background-color);
+}

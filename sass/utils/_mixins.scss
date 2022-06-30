@@ -1,0 +1,16 @@
+@mixin centeredFlex ($type: flex) {
+    display:$type;
+    align-items: center;
+    justify-content: center;    
+}
+
+@mixin bordered($color: black, $type:solid) {
+    border-top: 1px $color;
+    border-bottom: 1px $type $color;
+}
+
+@mixin font ($fs, $fw, $lh: 20px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh/$fs;
+}

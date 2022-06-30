@@ -1,0 +1,79 @@
+.logo {
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+.accent-header {
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+.accent-footer {
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .logo .accent-header .accent-footer {
+display: flex;
+flex-wrap: nowrap;
+justify-content: space-between;
+width: 100%;
+font-size: 26px;
+line-height: 1.2;
+margin-right: 81px;
+padding-top: 26px;
+padding-bottom: 26px;
+}
+}
+@media screen and (max-width: 1200px) {
+    .logo .accent-header .accent-footer {
+        display: flex;
+        justify-content: space-between;
+        min-width: 148px;
+        font-size: 26px;
+        line-height: 1.2;
+        margin-right: 85px;
+        padding-top: 24px;
+        padding-bottom: 25px;
+
+    }
+}
+
+
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    fill: #212121;
+}
+.menu-button .close {
+    display: none;
+}
+.menu-button.is-open .close {
+    display: block;
+}
+.menu-button.is-open .menu {
+    display: none;
+}
+
+.menu-button:hover, .menu-button:focus {
+    fill: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+    .menu-button {
+    display: none;        
+}
+}

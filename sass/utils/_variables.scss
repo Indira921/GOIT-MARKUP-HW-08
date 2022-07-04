@@ -1,11 +1,10 @@
-:root {
-    --primary-font-family:'Roboto', sans-serif;
-    --secondary-font-family: 'Raleway', sans-serif;
-    --main-text-color: #212121;
-    --primary-text-color: #000000; 
-    --secondary-text-color: #FFFFFF;
-    --accent-color: #2196F3;
-    --secondary-accent-color: #757575;
-    --background-color: #188CE8;
-    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+$primary-icon-color: #afb1b8;
+$primary-color: #212121;
+$secondary-color: #757575;
+$white-color: #ffffff;
+$accent-color: #2196f3;
+$background-color-secondary: #f5f4fa;
+$background-color-dark-grey: rgba(47, 48, 58, 0.8);
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$main-font: 'Roboto', sans-serif;
+$background-color: #188CE8;
